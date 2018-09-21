@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script src="http://davidbau.com/encode/seedrandom.min.js"></script>
+
+  <script src="simple-color-generator.js"></script>
+
+  <style>
+    .color {
+      width: 50px;
+      height: 30px;
+      margin: 10px;
+      float: left;
+      border: 2px solid #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='colors'></div>
+
+  <script>
+    var hueSeed = .31
+    var randomizeSeed = "tulips"
+
+    Math.seedrandom(randomizeSeed);
+
+    var gen = SimpleColorGenerator({
+      count: 10,
+      seed: hueSeed,
+      randomize: true
+    })
+
+    var bgColors = gen.getColors({
+      saturation: "50%",
+      lightness: "50%",
+      alpha: 0.5
+    });
+
+    var borderColors = gen.getColors({
+      saturation: "50%",
+      lightness: "50%",
+      alpha: 1
+    });
+
+    for (var i in bgColors) {
+      var colorDiv = document.createElement('div');
+      colorDiv.className = 'color';
+      colorDiv.style.backgroundColor = bgColors[i]
+      colorDiv.style.borderColor = borderColors[i]
+      document.getElementById('colors').appendChild(colorDiv);
+    }
+  </script>
+</body>
+
+</html>
