@@ -33,8 +33,6 @@ var borderColors = gen.getColors({
 
 **SimpleColorGenerator()**
 
-Generate a set of reusable hues.
-
 | Name      | Default                                 | Description                                                           |
 | --------- | --------------------------------------- | --------------------------------------------------------------------- |
 | count     | 10                                      | Number of colors to generate.                                         |
