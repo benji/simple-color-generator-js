@@ -21,6 +21,7 @@ var bgColors = gen.getColors({
   alpha: 0.5
 });
 
+// same hues with alpha=1
 var borderColors = gen.getColors({
   saturation: "50%",
   lightness: "50%",
