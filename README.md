@@ -29,9 +29,11 @@ var borderColors = gen.getColors({
 });
 ```
 
-### Options
+### API
 
-**SimpleColorGenerator() options:**
+**SimpleColorGenerator()**
+
+Generate a set of reusable hues.
 
 | Name      | Default                                 | Description                                                           |
 | --------- | --------------------------------------- | --------------------------------------------------------------------- |
@@ -40,6 +42,8 @@ var borderColors = gen.getColors({
 | randomize | true if no seed is set, false otherwise | Shuffles the colors. see [predictable randomize](#predictable-randomize)                                                  |
 
 **getColors() options:**
+
+Returns an array of colors (String) in HSLA format based on the same hue values.
 
 | Name       | Default | Description        |
 | ---------- | ------- | ------------------ |
