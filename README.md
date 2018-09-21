@@ -36,7 +36,7 @@ var borderColors = gen.getColors({
 | --------- | --------------------------------------- | --------------------------------------------------------------------- |
 | count     | 10                                      | Number of colors to generate.                                         |
 | seed      | Math.random() (no seed)                 | A float between 0 and 1. If set, will always produce the same colors. |
-| randomize | true if no seed is set, false otherwise | Shuffles the colors. see [predictable randomize](predictable-randomize)                                                  |
+| randomize | true if no seed is set, false otherwise | Shuffles the colors. see [predictable randomize](#predictable-randomize)                                                  |
 
 **getColors() options:**
 
