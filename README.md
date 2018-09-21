@@ -33,17 +33,17 @@ var borderColors = gen.getColors({
 
 **SimpleColorGenerator()**
 
-| Name      | Default                                 | Description                                                           |
+| Option    | Default                                 | Description                                                           |
 | --------- | --------------------------------------- | --------------------------------------------------------------------- |
 | count     | 10                                      | Number of colors to generate.                                         |
 | seed      | Math.random() (no seed)                 | A float between 0 and 1. If set, will always produce the same colors. |
 | randomize | true if no seed is set, false otherwise | Shuffles the colors. see [predictable randomize](#predictable-randomize)                                                  |
 
-**getColors() options:**
+**getColors()**
 
 Returns an array of colors (String) in HSLA format based on the same hue values.
 
-| Name       | Default | Description        |
+| Option     | Default | Description        |
 | ---------- | ------- | ------------------ |
 | saturation | "50%"   | Saturation to use. |
 | lightness  | "50%"   | Lightness to use.  |
