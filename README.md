@@ -1,4 +1,4 @@
-#### SimpleColorGenerator
+## SimpleColorGenerator
 
 A simple JS library for quickly get a decent array of colors.
 
@@ -6,7 +6,7 @@ A simple JS library for quickly get a decent array of colors.
 
 Uses [HSLA](https://www.w3.org/wiki/CSS/Properties/color/HSLA) format.
 
-#### Usage
+### Usage
 
 ```javascript
 var gen = SimpleColorGenerator({
@@ -28,7 +28,7 @@ var borderColors = gen.getColors({
 });
 ```
 
-#### Options
+### Options
 
 **SimpleColorGenerator() options:**
 
@@ -46,6 +46,6 @@ var borderColors = gen.getColors({
 | lightness  | "50%"   | Lightness to use.  |
 | alpha      | 1.      | Alpha to use.      |
 
-#### License
+### License
 
 [Apache License 2.0](LICENSE)
