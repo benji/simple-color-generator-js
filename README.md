@@ -2,7 +2,7 @@
 
 A simple JS library for quickly get a decent array of colors.
 
-![](https://raw.github.com/benji/simple-color-generator/master/samples.png)
+![](https://raw.github.com/benji/simple-color-generator-js/master/samples.png)
 
 ---
 
