@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script src="simple-color-generator.js"></script>
+
+  <style>
+    .color {
+      width: 65px;
+      height: 30px;
+      margin: 10px;
+      border: 2px solid #fff;
+      float: left;
+    }
+
+    .colors {}
+
+    .stripped {
+      background-image: linear-gradient(45deg, #a3a3a3 5.26%, #ffffff 5.26%, #ffffff 50%, #a3a3a3 50%, #a3a3a3 55.26%, #ffffff 55.26%, #ffffff 100%);
+background-size: 26.87px 26.87px;
+    }
+  </style>
+</head>
+
+<body class="stripped">
+  <div class="colors" id='colors1'></div>
+  <div style="clear:both"></div>
+  <div class="colors" id='colors2'></div>
+  <div style="clear:both"></div>
+  <div class="colors" id='colors3'></div>
+  <div style="clear:both"></div>
+  <div class="colors" id='colors4'></div>
+  <div style="clear:both"></div>
+  <div class="colors" id='colors5'></div>
+
+  <script>
+    function render(divid, bgsaturation, bglightness, bgalpha, bordersaturation, borderlightness, borderalpha) {
+      var gen = SimpleColorGenerator({
+        count: 10,
+        seed: Math.random(),
+        randomize: true
+      })
+
+      var bgColors = gen.getColors({
+        saturation: bgsaturation,
+        lightness: bglightness,
+        alpha: bgalpha
+      });
+
+      var borderColors = gen.getColors({
+        saturation: bordersaturation,
+        lightness: borderlightness,
+        alpha: borderalpha
+      });
+
+      for (var i in bgColors) {
+        var colorDiv = document.createElement('div');
+        colorDiv.className = 'color';
+        colorDiv.style.backgroundColor = bgColors[i]
+        colorDiv.style.borderColor = borderColors[i]
+        document.getElementById(divid).appendChild(colorDiv);
+      }
+    }
+
+    render('colors1', '80%', '50%', 1, '80%', '50%', 1)
+    render('colors2', '30%', '50%', 1, '30%', '50%', 1)
+    render('colors3', '50%', '70%', 1, '50%', '70%', 1)
+    render('colors4', '50%', '80%', 1, '50%', '50%', 1)
+    render('colors5', '50%', '80%', .5, '50%', '50%', 13)
+  </script>
+</body>
+
+</html>
