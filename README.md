@@ -31,7 +31,7 @@ var borderColors = gen.getColors({
 });
 ```
 
-### API
+### API 
 
 **SimpleColorGenerator()**
 
