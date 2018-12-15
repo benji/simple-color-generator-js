@@ -2,6 +2,9 @@
 
 A simple JS library to quickly get a decent array of colors.
 
+1) define how to produce the hues (how random and how many)
+2) generate various saturations, lightness and alpha for those colors
+
 ![](https://raw.github.com/benji/simple-color-generator-js/master/samples.png)
 
 ---
