@@ -31,7 +31,7 @@ var borderColors = gen.getColors({
 }); // => [ "hsla(11,50%,50%,1)", "hsla(191,50%,50%,1)", "hsla(83,50%,50%,1)", ... ]
 ```
 
-### API
+### API 
 
 **SimpleColorGenerator()**
 
