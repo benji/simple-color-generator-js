@@ -21,14 +21,14 @@ var bgColors = gen.getColors({
   saturation: "50%",
   lightness: "50%",
   alpha: 0.5
-});
+}); // => [ "hsla(11,50%,50%,0.5)", "hsla(191,50%,50%,0.5)", "hsla(83,50%,50%,0.5)", ... ]
 
 // same hues with alpha=1
 var borderColors = gen.getColors({
   saturation: "50%",
   lightness: "50%",
   alpha: 1
-});
+}); // => [ "hsla(11,50%,50%,1)", "hsla(191,50%,50%,1)", "hsla(83,50%,50%,1)", ... ]
 ```
 
 ### API
