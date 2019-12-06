@@ -1,8 +1,8 @@
 ## SimpleColorGenerator
 
-A simple JS library to quickly get a decent arrays of colors (hues) with differents alpha/saturation/lightness components.
+A simple JS library to quickly get a decent arrays of colors (hues) with different alpha/saturation/lightness components.
 
-One example use case is creating colors that are plain for the border and slightly transparent or lighter for the background (see example above).
+One example use case is creating colors that are plain for the border and slightly transparent or lighter for the background (see example below).
 
 This is a 2 steps process:
 1) Define how to produce the hues (how random and how many)
