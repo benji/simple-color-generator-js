@@ -78,6 +78,18 @@ var gen = SimpleColorGenerator({
 
 This will make sure you get the exact same array of colors every time, even afer a page refresh.
 
+### NodeJS
+
+```
+npm install @benji/simple-color-generator@1.0.1
+```
+
+```
+const SimpleColorGenerator = require('simple-color-generator') 
+var gen = SimpleColorGenerator({ count: 10 });
+var colors = gen.getColors({ alpha: 0.5 });
+```
+
 ### License
 
 [Apache License 2.0](LICENSE)

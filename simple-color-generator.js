@@ -57,3 +57,5 @@ var SimpleColorGenerator = function (opts) {
 
   return self;
 };
+
+if (module) module.exports = SimpleColorGenerator

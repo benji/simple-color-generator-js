@@ -1,0 +1,21 @@
+{
+  "name": "simple-color-generator",
+  "version": "1.0.1",
+  "description": "A simple JS library to quickly get a decent arrays of colors (hues) with different alpha/saturation/lightness components.",
+  "main": "simple-color-generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/benji/simple-color-generator-js.git"
+  },
+  "keywords": [],
+  "author": "Benjamin Jaton",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/benji/simple-color-generator-js/issues"
+  },
+  "homepage": "https://github.com/benji/simple-color-generator-js#readme",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@benji" }
+}
